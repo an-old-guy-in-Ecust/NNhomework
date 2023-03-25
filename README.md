@@ -1,11 +1,5 @@
 直接运行hw1.ipynb即可！
 
-<<<<<<< HEAD
-1. 定义两层神经网络模型。
-假设输入为X，$X\in R^{1\times 784}$, 则第一层的输出为：$$o_1 = sigmoid(W_1 *X+b_1)=\frac{1}{1+exp(-W_1*X+b_1)}$$
-其中$W_1\in R^{784\times hidden},b_1\in R^{1\times hidden}$
-第二层输出为：$$o_2 = softmax(o_1 * W_2+b_2)$$ 其中$W_2\in R^{hidden\times 10},b_1\in R^{1\times 10}$
-=======
 （1）定义双层神经网络模型
 前向计算：
 
@@ -23,4 +17,3 @@
 6. $\frac{dL}{dW_1} = \frac{dL}{dY_1}\frac{dY_1}{dW_1}=(o_2-1)W_2^T o_1(1-o_1)X$
    梯度更新：对于参数$W_1,W_2,b_1和b_2$，设置学习率进行梯度下降，学习率设置为每1000个batch衰减为95%。
    batch_size设置为32。
->>>>>>> a327bd7 (second commit)
