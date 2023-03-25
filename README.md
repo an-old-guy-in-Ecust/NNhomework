@@ -8,7 +8,9 @@
 3. 第二层输出：$Y_2=o_1 W_2+b_2,o_2=softmax(Y_2)$
    误差损失函数：交叉熵加正则化项
    $L = -\sum_t y_t\log o_{2t}+\lambda(||W_2||_2+||b_2||_2)$
-   后向传播：
+
+后向传播：
+
 1. $-\frac{dL}{do_2}=-\frac{1}{o_2}$
 2. $\frac{dL}{dY_2}=-\frac{1}{o_2}o_2(1-o_2)=o_2-1$
 3. $\frac{dL}{do_1} = \frac{dL}{dY_2}\frac{dY_2}{do_1}=(o_2-1)W_2^T$
