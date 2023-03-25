@@ -15,5 +15,6 @@
 4. $\frac{dL}{dW_2} = \frac{dL}{dY_2}\frac{dY_2}{dW_2}=(o_2-1)o_1^T$
 5. $\frac{dL}{dY_1}=(o_2-1)W_2^T o_1(1-o_1)$
 6. $\frac{dL}{dW_1} = \frac{dL}{dY_1}\frac{dY_1}{dW_1}=(o_2-1)W_2^T o_1(1-o_1)X$
+
    梯度更新：对于参数$W_1,W_2,b_1和b_2$，设置学习率进行梯度下降，学习率设置为每1000个batch衰减为95%。
    batch_size设置为32。
